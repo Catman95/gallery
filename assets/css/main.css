@@ -1,0 +1,346 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Calibri';
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+#cookieAlert {
+  max-width: 100%;
+  position: relative;
+  top: 10%;
+  margin: auto;
+  border-radius: 4px;
+  padding: 30px;
+  width: 400px;
+  background-color: #eee;
+}
+
+#cookieAlert h1 {
+  margin-bottom: 30px;
+}
+
+#cookieAlert div {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#cookieAlert div button {
+  cursor: pointer;
+  padding: 6px;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 2px;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+#cookieAlert div #acceptCookies {
+  margin-right: 20px;
+  background-color: #02B875;
+}
+
+#cookieAlert div #acceptCookies:hover {
+  background-color: #02905b;
+}
+
+#cookieAlert div #declineCookies {
+  background-color: #D9534F;
+}
+
+#cookieAlert div #declineCookies:hover {
+  background-color: #d2322d;
+}
+
+#cookieBlock {
+  display: none;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  background-color: #02B875;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #eee;
+}
+
+header i {
+  font-size: 25px;
+}
+
+header p {
+  margin-left: 10px;
+  font-size: 30px;
+}
+
+#newGrid {
+  margin: 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#newGrid .imageFrame {
+  margin: 10px;
+  overflow: hidden;
+  border-radius: 4px;
+  border: 8px solid #fff;
+  -webkit-box-shadow: 0px 0px 5px #000;
+          box-shadow: 0px 0px 5px #000;
+  width: 170px;
+  height: 170px;
+}
+
+#newGrid .imageFrame img {
+  height: 170px;
+  display: block;
+}
+
+#newGrid .imageFrame:hover {
+  cursor: pointer;
+}
+
+#carousel {
+  border-radius: 5px;
+  display: none;
+  -webkit-box-shadow: 0px 0px 5px #000;
+          box-shadow: 0px 0px 5px #000;
+  position: fixed;
+  padding: 20px 0;
+  top: 10%;
+  margin: 0 10px;
+  /*left: 50%;
+    transform: translateX(-50%);*/
+  background-color: #fff;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 100%;
+}
+
+#carousel #carouselTop {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#carousel #carouselTop i {
+  margin: 0 15px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #DD3C30;
+}
+
+#carousel #carouselMiddle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#carousel #carouselMiddle i {
+  margin: 0 15px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #2196F3;
+}
+
+#carousel #carouselMiddle i:hover {
+  color: #0c7cd5;
+}
+
+#carousel #carouselMiddle #carouselImageHolder {
+  margin: 20px 0;
+  overflow: hidden;
+}
+
+#carousel #carouselMiddle #carouselImageHolder img {
+  max-width: 100%;
+  position: relative;
+  display: block;
+}
+
+#carousel #carouselBottom #play {
+  color: #02B875;
+}
+
+#carousel #carouselBottom #play:hover {
+  color: #018655;
+}
+
+#carousel #carouselBottom #pause {
+  color: #F0AD4E;
+}
+
+#carousel #carouselBottom #pause:hover {
+  color: #ec971f;
+}
+
+#carousel #carouselBottom i {
+  margin: 0 10px;
+  font-size: 30px;
+  cursor: pointer;
+  color: #4582EC;
+}
+
+#carousel #carouselBottom i:hover {
+  color: #1863e6;
+}
+
+main {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main h1 {
+  margin-top: 60px;
+  color: #333;
+}
+
+main p {
+  color: #aaa;
+  margin: 15px 0;
+}
+
+main #searchHolder {
+  border-radius: 4px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+main #searchHolder i {
+  color: #3498DB;
+}
+
+main #searchHolder input {
+  font-size: 18px;
+  outline: none;
+  border: none;
+  color: #aaa;
+}
+
+main #imageGrid {
+  margin-bottom: 60px;
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main #imageGrid .imageFrame {
+  margin: 10px;
+  overflow: hidden;
+  border-radius: 4px;
+  border: 8px solid #fff;
+  -webkit-box-shadow: 0px 0px 5px #000;
+          box-shadow: 0px 0px 5px #000;
+  width: 170px;
+}
+
+main #imageGrid .imageFrame img {
+  width: 170px;
+  display: block;
+  height: 100%;
+}
+
+main #imageGrid .imageFrame:hover {
+  cursor: pointer;
+}
+
+main button {
+  margin-bottom: 60px;
+  cursor: pointer;
+  padding: 12px;
+  color: #fff;
+  background-color: #D9534F;
+  font-size: 18px;
+  border: none;
+  border-radius: 2px;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+main button:hover {
+  background-color: #d2322d;
+}
+
+footer {
+  padding: 90px;
+  width: 100%;
+  background-color: #343A40;
+  text-align: center;
+  color: #fff;
+}
+
+footer i {
+  color: #EF5252;
+}
+
+footer a {
+  color: #3498DB;
+}
+/*# sourceMappingURL=main.css.map */

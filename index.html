@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <script type="text/javascript">
+            (function() {
+                var css = document.createElement('link');
+                css.href = 'https://use.fontawesome.com/releases/v5.1.0/css/all.css';
+                css.rel = 'stylesheet';
+                css.type = 'text/css';
+                document.getElementsByTagName('head')[0].appendChild(css);
+            })();
+        </script>
+    </head>
+    <body>
+        <div id="cookieBlock">
+            <div id="cookieAlert">
+                <h1>Our site uses cookies</h1>
+                <p>This site uses cookies to provide a better browsing experience for you. If you want to continue viewing the site, please accept.</p>
+                <div>
+                    <button id="acceptCookies">Accept</button>
+                    <button id="declineCookies">Decline</button>
+                </div>
+            </div>
+        </div>
+        <header>
+            <i class="fas fa-camera-retro"></i>
+            <p>Album</p>
+        </header>
+        <main>
+            <div id="carousel">
+                <div id="carouselTop"><i class="fas fa-times" id="carouselClose"></i></div>
+                <div id="carouselMiddle">
+                    <div id="carouselImageHolder"></div>
+                </div>
+                <div id="carouselBottom">
+                    <i class="fas fa-chevron-circle-left arrow" data-direction="left"></i>
+                    <i class="fas fa-play" id="play"></i>
+                    <i class="fas fa-pause-circle" id="pause"></i>
+                    <i class="fas fa-chevron-circle-right arrow" data-direction="right"></i>
+                </div>
+            </div>
+            <h1>Album</h1>
+            <p>Type name or description to filter images</p>
+            <div id="searchHolder">
+                <input type="text" id="searchBar" placeholder="Search">
+                <i class="fas fa-search"></i>
+            </div>
+            <div id="newGrid"></div>
+            <button id="reset">Clear local storage and refresh <i class="fas fa-redo-alt"></i></button>
+        </main>
+        <footer>Developed with <i class="fas fa-heart"></i> by <a target="_blank" href="http://stankovic95.epizy.com">Catman95</a></footer>
+        <script src="assets/js/jquery.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
